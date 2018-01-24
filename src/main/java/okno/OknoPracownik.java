@@ -194,6 +194,8 @@ if (e.getSource() == bEdytuj)
         Element p = pracownicy.zwroc(id);
         pracownik = p;
         ustawJLabel(p); 
+        oknoGlowne.odswiez();
+
         }
     } 
 //----------------------------------------------------------------------
