@@ -29,7 +29,7 @@ public class OknoPracownik extends JFrame implements ActionListener
     private JTextField tfZarobki;
     private JButton bWyswietl;
     private JButton bDodaj;
-    private JButton bEdytuj;
+  //  private JButton bEdytuj;
     private JButton bUsun;
     
     private Element pracownicy;
@@ -72,12 +72,12 @@ private void wypelnijOkno()
     tfZarobki = new JTextField(5);
     bWyswietl = new JButton("wyswietl");
     bDodaj = new JButton("dodaj");
-    bEdytuj = new JButton("edytuj");
+    //bEdytuj = new JButton("edytuj");
     bUsun = new JButton("usun");
     
     bWyswietl.addActionListener(this);
     bDodaj.addActionListener(this);
-    bEdytuj.addActionListener(this);
+    //bEdytuj.addActionListener(this);
     bUsun.addActionListener(this);
     
     JPanel p1 = new JPanel();
@@ -93,7 +93,7 @@ private void wypelnijOkno()
     p1.add(tfNrPracownika);
     p1.add(bWyswietl);
     p2.add(bUsun);
-    p2.add(bEdytuj);
+   // p2.add(bEdytuj);
     p3.add(jlId0);
     p3.add(jlId);
     p4.add(jlImie0);
@@ -182,7 +182,7 @@ if (e.getSource() == bUsun)
         }
     } 
 //----------------------------------------------------------------------
-if (e.getSource() == bEdytuj) 
+//if (e.getSource() == bEdytuj) 
     {
     zerujTextField();
     zerujJLabel();
